@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <div class="exit">
+            <button onclick="window.location.href = '/'">Exit Riverstone</button>
+        </div>
+        <div class="profile">
+            <p class="Username">Username: Null</p>
+            <p class="OverallSkills">Total Skill: Null</p>
+        </div>
+        <div class="worldSelectSection">
+            <p class="inline-block">Current World: </p>
+            <select id="worldSelect" class="inline-block">
+                <option value="1">World 1</option>
+                <option value="2">World 2</option>
+            </select>
+        </div>
+    </body>
+
+    <script>
+        console.log("Riverstone Client Started!")
+    </script>
+
+    <style>
+        body {
+            background-color: aquamarine;
+            font-family: 'Papyrus', sans-serif;
+            display: flex;
+            justify-content: space-between; /* Change from flex-end to space-between */
+            align-items: center; /* Align items vertically */
+            padding: 10px; /* Add some padding for better spacing */
+        }
+        
+        .worldSelectSection {
+            background-color: darkblue;
+            color: white;
+            width: fit-content;
+            border-radius: 10px;
+        }
+
+        .inline-block {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .exit {
+            border-radius: 10px;
+            background-color: darkred;
+            padding: 5px;
+            width: fit-content;
+        }
+
+        .profile {
+            background-color: darkblue;
+            color: white;
+            width: 500px;
+            border-radius: 10px;
+        }
+    </style>
+</html>
